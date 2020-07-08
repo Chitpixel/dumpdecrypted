@@ -33,10 +33,14 @@ And then just:
 
 ## Usage:
 
-`iPod:~ root# DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /copied/app/directory/Music.app/Music`
+```
+iPod:~ root# DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /copied/app/directory/Music.app/Music
+
 mach-o decryption dumper
 
+
 DISCLAIMER: This tool is only meant for security research purposes, not for application crackers.
+
 
 [+] Found encrypted data at address 00002000 of length 1826816 bytes - type 1.
 [+] Opening /copied/app/directory/Music.app/Music for reading.
@@ -52,3 +56,4 @@ DISCLAIMER: This tool is only meant for security research purposes, not for appl
 [+] Copying the not encrypted remainder of the file
 [+] Closing original file
 [+] Closing dump file
+```
